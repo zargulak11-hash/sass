@@ -19,7 +19,16 @@ body {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/image.jpg");
     }
 }
-
+@mixin forbuton{
+    width: 190px;
+        height: 52px;
+        background-color: #23A6F0;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 700;
+        color: white;
+        border: none;
+}
 .navbar {
 
     display: flex;
@@ -44,14 +53,7 @@ body {
     }
 
     button {
-        width: 190px;
-        height: 52px;
-        background-color: #23A6F0;
-        border-radius: 5px;
-        font-size: 14px;
-        font-weight: 700;
-        color: white;
-        border: none;
+        @include forbuton();
     }
 }
 
@@ -217,19 +219,22 @@ body {
 .mnavbar {
     display: none;
 }
-.color{
+
+.color {
     @extend .header1;
     padding-top: 100px;
     background-color: #FAFAFA;
 }
-.items{
+
+.items {
     padding-bottom: 200px;
     margin-top: 80px;
     display: flex;
     justify-content: center;
     gap: 30px;
 }
-@mixin foritems{
+
+@mixin foritems {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -239,33 +244,39 @@ body {
     border: 1px solid #DEDEDE;
     border-radius: 5px;
     background-color: white;
-    p{
+
+    p {
         font-size: 14px;
         font-weight: 600;
         width: 234px;
         color: #737373
     }
-    img:first-child{
+
+    img:first-child {
         width: 130px;
         height: 22px;
     }
-     img:last-child{
+
+    img:last-child {
         width: 50px;
         height: 50px;
     }
 }
-.item1{
+
+.item1 {
     @include foritems();
 }
-.kartaho{
+
+.kartaho {
     max-width: 1100px;
     margin: auto;
     margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
-    gap:25px;
+    gap: 25px;
 }
-@mixin karta{
+
+@mixin karta {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,58 +286,200 @@ body {
     height: 80px;
     border-radius: 9px;
     background-color: white;
-    h5{
+
+    h5 {
         font-size: 16px;
         font-weight: 700;
         width: 239px;
         color: #252B42;
     }
-    h6{
+
+    h6 {
         font-weight: 400;
         font-size: 14px;
         color: #737373;
         width: 211px;
     }
-    div{
+
+    div {
         display: flex;
         gap: 17px;
     }
-    img{
+
+    img {
         width: 8.62px;
         height: 16px
     }
 }
-.karta{
+
+.karta {
     @include karta();
 }
-.karta1{
+
+.karta1 {
+    margin-bottom: 150px;
     @include karta();
 }
+
+.kartochkaho {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+@mixin kartochka {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    padding: 30px;
+    width: 270px;
+    height: 590px;
+    border-radius: 10px;
+    border: 1px solid #23A6F0;
+    background-color: white;
+
+    h3 {
+        margin-top: 15px;
+        font-weight: 700;
+        font-size: 24px;
+        color: #252B42;
+        text-align: center;
+    }
+
+    h5 {
+        font-size: 16px;
+        font-weight: 700;
+        width: 160px;
+        color: #737373;
+        text-align: center;
+    }
+    .dolar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        h2{
+                color: #23A6F0;
+                font-weight: 700;
+                font-size: 40px;
+        }
+        h6{
+                font-weight: 700;
+                font-size: 16px;
+                color: #23A6F0;
+        }
+        p{
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #8EC2F2;
+        }
+    }
+    .dolor{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        p{
+            font-size: 15px;
+            font-weight: 600;
+            color: #252B42;
+        }
+        h5{
+            width: 190px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #252B42;
+        }
+        h6{
+            width: 190px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #252B42;
+        }
+    }
+    button{
+        @include forbuton();
+        width: 250px;
+    }
+
+}
+
+.kartochka {
+    margin-top: 40px;
+    @include kartochka();
+}
+.kartochka1 {
+    @include kartochka();
+    background-color: #252B42;
+    height: 630px;
+    h3{
+        color: white;
+    }
+    h5{
+        color: white;
+    }
+    .dolor{
+        p{
+            color: white;
+        }
+        h5{
+            color: white;
+        }
+        h6{
+            color: white;
+        }
+    }
+}
+
 @media (max-width:510px) {
-    .karta1{
+    .kartochka{
+        margin: auto;
+        width: 220px;
+        border-radius: 0px;
+    }
+    .kartochka1{
+        margin: auto;
+        width: 220px;
+        border-radius: 0px;
+    }
+    .kartochkaho{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .karta1 {
         display: none;
     }
-    .karta{
+
+    .karta {
         margin: auto;
         width: 240px;
     }
-    .kartaho{
-   margin-top: 40px;
-}
-    .color{
+
+    .kartaho {
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+
+    .color {
         margin-top: 50px;
         padding-top: 50px;
     }
-    .item1{
+
+    .item1 {
         margin: auto;
         width: 240px;
         height: 150px;
     }
-    .items{
+
+    .items {
         margin-top: 60px;
         display: flex;
         flex-direction: column;
     }
+
     .boxs {
         margin: auto;
         width: 290px;

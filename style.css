@@ -267,6 +267,7 @@ body {
 }
 
 .karta1 {
+  margin-bottom: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -298,7 +299,213 @@ body {
   height: 16px;
 }
 
+.kartochkaho {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+.kartochka {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  padding: 30px;
+  width: 270px;
+  height: 590px;
+  border-radius: 10px;
+  border: 1px solid #23A6F0;
+  background-color: white;
+}
+.kartochka h3 {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #252B42;
+  text-align: center;
+}
+.kartochka h5 {
+  font-size: 16px;
+  font-weight: 700;
+  width: 160px;
+  color: #737373;
+  text-align: center;
+}
+.kartochka .dolar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.kartochka .dolar h2 {
+  color: #23A6F0;
+  font-weight: 700;
+  font-size: 40px;
+}
+.kartochka .dolar h6 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #23A6F0;
+}
+.kartochka .dolar p {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #8EC2F2;
+}
+.kartochka .dolor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.kartochka .dolor p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #252B42;
+}
+.kartochka .dolor h5 {
+  width: 190px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #252B42;
+}
+.kartochka .dolor h6 {
+  width: 190px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #252B42;
+}
+.kartochka button {
+  width: 190px;
+  height: 52px;
+  background-color: #23A6F0;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  border: none;
+  width: 250px;
+}
+
+.kartochka1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  padding: 30px;
+  width: 270px;
+  height: 590px;
+  border-radius: 10px;
+  border: 1px solid #23A6F0;
+  background-color: white;
+}
+.kartochka1 h3 {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #252B42;
+  text-align: center;
+}
+.kartochka1 h5 {
+  font-size: 16px;
+  font-weight: 700;
+  width: 160px;
+  color: #737373;
+  text-align: center;
+}
+.kartochka1 .dolar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.kartochka1 .dolar h2 {
+  color: #23A6F0;
+  font-weight: 700;
+  font-size: 40px;
+}
+.kartochka1 .dolar h6 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #23A6F0;
+}
+.kartochka1 .dolar p {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #8EC2F2;
+}
+.kartochka1 .dolor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.kartochka1 .dolor p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #252B42;
+}
+.kartochka1 .dolor h5 {
+  width: 190px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #252B42;
+}
+.kartochka1 .dolor h6 {
+  width: 190px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #252B42;
+}
+.kartochka1 button {
+  width: 190px;
+  height: 52px;
+  background-color: #23A6F0;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  border: none;
+  width: 250px;
+}
+.kartochka1 {
+  background-color: #252B42;
+  height: 630px;
+}
+.kartochka1 h3 {
+  color: white;
+}
+.kartochka1 h5 {
+  color: white;
+}
+.kartochka1 .dolor p {
+  color: white;
+}
+.kartochka1 .dolor h5 {
+  color: white;
+}
+.kartochka1 .dolor h6 {
+  color: white;
+}
+
 @media (max-width: 510px) {
+  .kartochka {
+    margin: auto;
+    width: 220px;
+    border-radius: 0px;
+  }
+  .kartochka1 {
+    margin: auto;
+    width: 220px;
+    border-radius: 0px;
+  }
+  .kartochkaho {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
   .karta1 {
     display: none;
   }
@@ -308,6 +515,7 @@ body {
   }
   .kartaho {
     margin-top: 40px;
+    margin-bottom: 80px;
   }
   .color {
     margin-top: 50px;
