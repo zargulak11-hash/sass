@@ -192,7 +192,7 @@ body {
 }
 
 .items {
-  padding-bottom: 100px;
+  padding-bottom: 200px;
   margin-top: 80px;
   display: flex;
   justify-content: center;
@@ -225,7 +225,90 @@ body {
   height: 50px;
 }
 
+.kartaho {
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.karta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  padding: 25px;
+  width: 280px;
+  height: 80px;
+  border-radius: 9px;
+  background-color: white;
+}
+.karta h5 {
+  font-size: 16px;
+  font-weight: 700;
+  width: 239px;
+  color: #252B42;
+}
+.karta h6 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #737373;
+  width: 211px;
+}
+.karta div {
+  display: flex;
+  gap: 17px;
+}
+.karta img {
+  width: 8.62px;
+  height: 16px;
+}
+
+.karta1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  padding: 25px;
+  width: 280px;
+  height: 80px;
+  border-radius: 9px;
+  background-color: white;
+}
+.karta1 h5 {
+  font-size: 16px;
+  font-weight: 700;
+  width: 239px;
+  color: #252B42;
+}
+.karta1 h6 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #737373;
+  width: 211px;
+}
+.karta1 div {
+  display: flex;
+  gap: 17px;
+}
+.karta1 img {
+  width: 8.62px;
+  height: 16px;
+}
+
 @media (max-width: 510px) {
+  .karta1 {
+    display: none;
+  }
+  .karta {
+    margin: auto;
+    width: 240px;
+  }
+  .kartaho {
+    margin-top: 40px;
+  }
   .color {
     margin-top: 50px;
     padding-top: 50px;
