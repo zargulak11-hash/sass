@@ -217,31 +217,90 @@ body {
 .mnavbar {
     display: none;
 }
-
+.color{
+    @extend .header1;
+    padding-top: 100px;
+    background-color: #FAFAFA;
+}
+.items{
+    padding-bottom: 100px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+@mixin foritems{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 25px;
+    width: 250px;
+    height: 160px;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    background-color: white;
+    p{
+        font-size: 14px;
+        font-weight: 600;
+        width: 234px;
+        color: #737373
+    }
+    img:first-child{
+        width: 130px;
+        height: 22px;
+    }
+     img:last-child{
+        width: 50px;
+        height: 50px;
+    }
+}
+.item1{
+    @include foritems();
+}
 @media (max-width:510px) {
-    .boxs{
+    .color{
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+    .item1{
         margin: auto;
-        width: 290px;
+        width: 240px;
+        height: 150px;
     }
-    .box1{
-        width: 291px;
-    }
-    .box2{
-        width: 290px;
-    }
-    .header1{
-        h1{
-            margin: auto;
-            width: 300px;
-        }
-        h4{
-            width: 240px;
-        }
-    }
-    .big{
+    .items{
+        margin-top: 60px;
         display: flex;
         flex-direction: column;
     }
+    .boxs {
+        margin: auto;
+        width: 290px;
+    }
+
+    .box1 {
+        width: 291px;
+    }
+
+    .box2 {
+        width: 290px;
+    }
+
+    .header1 {
+        h1 {
+            margin: auto;
+            width: 300px;
+        }
+
+        h4 {
+            width: 240px;
+        }
+    }
+
+    .big {
+        display: flex;
+        flex-direction: column;
+    }
+
     .divleft {
         margin-top: 80px;
         display: flex;
