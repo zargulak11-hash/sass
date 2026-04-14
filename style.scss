@@ -19,16 +19,18 @@ body {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/image.jpg");
     }
 }
-@mixin forbuton{
+
+@mixin forbuton {
     width: 190px;
-        height: 52px;
-        background-color: #23A6F0;
-        border-radius: 5px;
-        font-size: 14px;
-        font-weight: 700;
-        color: white;
-        border: none;
+    height: 52px;
+    background-color: #23A6F0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    border: none;
 }
+
 .navbar {
 
     display: flex;
@@ -355,51 +357,60 @@ body {
         color: #737373;
         text-align: center;
     }
-    .dolar{
+
+    .dolar {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
-        h2{
-                color: #23A6F0;
-                font-weight: 700;
-                font-size: 40px;
+
+        h2 {
+            color: #23A6F0;
+            font-weight: 700;
+            font-size: 40px;
         }
-        h6{
-                font-weight: 700;
-                font-size: 16px;
-                color: #23A6F0;
+
+        h6 {
+            font-weight: 700;
+            font-size: 16px;
+            color: #23A6F0;
         }
-        p{
+
+        p {
             margin-top: 5px;
             font-size: 14px;
             font-weight: 600;
             color: #8EC2F2;
         }
     }
-    .dolor{
+
+    .dolor {
         display: flex;
         align-items: center;
         gap: 10px;
-        p{
+
+        p {
             font-size: 15px;
             font-weight: 600;
             color: #252B42;
         }
-        h5{
+
+        h5 {
             width: 190px;
             font-size: 15px;
             font-weight: 600;
             color: #252B42;
         }
-        h6{
+
+        h6 {
             width: 190px;
             font-size: 15px;
             font-weight: 600;
             color: #252B42;
         }
     }
-    button{
+
+    button {
         @include forbuton();
         width: 250px;
     }
@@ -410,45 +421,158 @@ body {
     margin-top: 40px;
     @include kartochka();
 }
+
 .kartochka1 {
     @include kartochka();
     background-color: #252B42;
     height: 630px;
-    h3{
+
+    h3 {
         color: white;
     }
-    h5{
+
+    h5 {
         color: white;
     }
-    .dolor{
-        p{
+
+    .dolor {
+        p {
             color: white;
         }
-        h5{
+
+        h5 {
             color: white;
         }
-        h6{
+
+        h6 {
             color: white;
         }
     }
 }
 
+.black {
+    background-color: #252B42;
+}
+
+.header3 {
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.divleft1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    color: white;
+
+    h3 {
+        display: none;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    p {
+        width: 400px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.divright1 {
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        width: 386px;
+        height: 58px;
+        border-radius: 5px;
+        background-color: white;
+        border: 1px solid #E6E6E6;
+    }
+
+    input {
+        padding: 20px;
+        width: 230px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #737373;
+        border: none;
+    }
+
+    button {
+        width: 117px;
+        height: 58px;
+        background-color: #23A6F0;
+        font-size: 14px;
+        font-weight: 400;
+        color: white;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: none;
+    }
+}
+
 @media (max-width:510px) {
-    .kartochka{
+    .header3 {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divleft1 {
+        h2  {
+            display: none;
+        }
+        p  {
+            display: none;
+        }
+
+        h3 {
+            display: block;
+            font-weight: 700;
+            font-size: 24px;
+            width: 258px;
+            text-align: center;
+            margin: auto;
+        }
+    }
+.divright1{
+    margin-top: 30px;
+    div{
+        width: 280px;
+    }
+    input{
+        width: 130px;
+    }
+}
+    .kartochka {
         margin: auto;
         width: 220px;
         border-radius: 0px;
     }
-    .kartochka1{
+
+    .kartochka1 {
         margin: auto;
         width: 220px;
         border-radius: 0px;
     }
-    .kartochkaho{
+
+    .kartochkaho {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
+
     .karta1 {
         display: none;
     }
