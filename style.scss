@@ -522,7 +522,77 @@ body {
     }
 }
 
+.header4 {
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 70px;
+    justify-content: space-between;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+
+        .df{
+            width: 30px;
+            gap: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 24px;
+            color: #252B42;
+        }
+
+        h3 {
+            font-weight: 500;
+            font-size: 14px;
+            color: #737373;
+            width: 213px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 600;
+            color: #737373;
+        }
+    }
+}
+.header5{
+    margin-top: 70px;
+    background-color: #FAFAFA;
+    padding: 30px;
+    h6{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        color: #737373;
+    }
+}
 @media (max-width:510px) {
+    .header5{
+        margin-top: 0px;
+        h6{
+            width: 221px;
+            margin: auto;
+        }
+    }
+    .header4{
+        padding: 80px;
+        margin-top: 0px;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        div{
+            .df{
+                padding-left: 40px;
+            }
+        }
+    }
     .header3 {
         margin-top: 60px;
         display: flex;
@@ -530,10 +600,11 @@ body {
     }
 
     .divleft1 {
-        h2  {
+        h2 {
             display: none;
         }
-        p  {
+
+        p {
             display: none;
         }
 
@@ -546,15 +617,19 @@ body {
             margin: auto;
         }
     }
-.divright1{
-    margin-top: 30px;
-    div{
-        width: 280px;
+
+    .divright1 {
+        margin-top: 30px;
+
+        div {
+            width: 280px;
+        }
+
+        input {
+            width: 130px;
+        }
     }
-    input{
-        width: 130px;
-    }
-}
+
     .kartochka {
         margin: auto;
         width: 220px;
